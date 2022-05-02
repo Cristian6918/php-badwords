@@ -6,15 +6,23 @@ $string2=$_GET["word"];
 
 $string3='***';
 
-
-
-
-
-
-
 ?> 
 
-<p> <?php echo($string1) ?></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> <?php echo($replaced=str_replace($string2, $string3, $string1))  ?></p>
+    <p> lunghezza  originale paragrafo: <?php echo(strlen($string1))  ?></p>
+    <p> lunghezza replaced paragrafo <?php echo(strlen($replaced))  ?></p>
+    
+</body>
+</html>
 
-<p> lunghezza paragrafo: <?php echo(strlen($string1) + strlen($string2))  ?></p>
+
 
